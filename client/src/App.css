@@ -1,0 +1,47 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* ::-webkit-scrollbar-track {
+} */
+
+::-webkit-scrollbar-thumb {
+  background: #505050;
+  border-radius: 20px;
+}
+
+.welcome-profile {
+  background-image: linear-gradient(90deg, #e35d6a, navajowhite);
+  background-clip: text;
+  color: transparent;
+  font-weight: bold;
+  text-align: center;
+}
+
+.page-not-found {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+.page-not-found p {
+  font-size: 50px;
+  font-family: "Oswald", sans-serif;
+  background-image: linear-gradient(180deg, #e35d6a, navajowhite);
+  background-clip: text;
+  color: transparent;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 400px) {
+  .page-not-found p {
+    font-size: 35px;
+  }
+}

@@ -1,0 +1,108 @@
+.card-wrapper-employed {
+  display: flex;
+  justify-content: space-around;
+  padding: 100px 50px;
+}
+
+.card-employed {
+  border-radius: 25px;
+  background-color: #eae7de;
+  width: 300px;
+  margin: 15px 15px;
+  box-shadow: 6px 6px 12px 0px rgba(126, 126, 126, 0.56);
+}
+.image-content-employed,
+.card-content-employed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+.image-content-employed {
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+}
+.overlay-employed {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #e35d6a;
+  border-radius: 25px 25px 0 25px;
+}
+.overlay-employed::before,
+.overlay-employed::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: #e35d6a;
+}
+.overlay-employed::after {
+  border-radius: 0 25px 0 0;
+  background-color: #eae7de;
+}
+.card-image-employed {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: #fff;
+  padding: 3px;
+}
+.card-image-employed .card-img-employed {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #e35d6a;
+}
+.name-employed {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+.description-employed {
+  font-size: 14px;
+  color: #707070;
+  text-align: center;
+}
+.button-employed {
+  border: none;
+  font-size: 16px;
+  padding: 8px 16px;
+  color: #fff;
+  background-color: #e35d6a;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button-employed:hover {
+  background: #fff;
+  color: #333;
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 1200px) {
+  .card-wrapper-employed {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card-wrapper-employed {
+    padding: 50px 25px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .card-wrapper-employed {
+    padding: 25px 10px;
+  }
+}

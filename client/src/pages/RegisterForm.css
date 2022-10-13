@@ -1,0 +1,157 @@
+.register-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 123px);
+  max-height: fit-content;
+  overflow-y: auto;
+  background: linear-gradient(to right, #e0c0a580, #88614280),
+    url(../images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 20px 0;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background: rgb(252, 176, 69);
+  background: linear-gradient(
+    135deg,
+    rgba(252, 176, 69, 1) 0%,
+    rgba(227, 93, 106, 1) 50%,
+    rgba(220, 53, 69, 1) 100%
+  );
+  padding: 0 10px 20px 10px;
+  color: #fff;
+}
+
+.register-form .form-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.formInput {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.register-form .formInput input {
+  padding: 5px;
+  margin: 10px 0px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  width: 60%;
+  font-size: 18px;
+}
+
+.register-form .formInput label {
+  font-size: 18px;
+}
+
+.register-form a {
+  color: #fff;
+}
+
+.register-form button {
+  background-color: #fff;
+  outline: none;
+  border: none;
+  color: #e35d6a;
+  font-size: 26px;
+  width: 25%;
+  margin: 15px 0;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+.register-form button:hover {
+  background-color: #ffc107;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.back-step:hover {
+  color: #ffc107;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.register-err-span {
+  font-size: 12px;
+  padding: 3px;
+  display: none;
+  text-align: center;
+  color: #fff;
+}
+
+input:invalid[focused="true"] {
+  border: 2px solid #000;
+}
+
+input:invalid[focused="true"] ~ .register-err-span {
+  display: block;
+}
+
+.register-form .form-content {
+  display: flex;
+  justify-content: center;
+}
+
+.register-form .form-content .form-div {
+  width: 400px;
+}
+
+@media screen and (max-width: 992px) {
+  .register-form .form-content .form-div {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .register-form .form-content .form-div {
+    width: 230px;
+  }
+  .register-form .formInput input {
+    width: 80%;
+    font-size: 18px;
+  }
+  .register-form button {
+    width: fit-content;
+    padding: 5px 15px;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .register-form .form-avatar {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .form-content {
+    flex-direction: column;
+  }
+
+  .register-form .form-content .form-div {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .register-form .form-content .form-div {
+    width: 200px;
+  }
+}

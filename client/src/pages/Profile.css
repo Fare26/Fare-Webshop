@@ -1,0 +1,148 @@
+.profile-wrapper {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(to right, #ffdbbe80, #88614280),
+    url("../images/profile-page-pattern.png");
+}
+
+.profile-content {
+  display: flex;
+  width: 80%;
+  padding: 20px 0;
+}
+
+.profile-sidebar {
+  min-height: calc(100vh - 163px);
+  max-height: fit-content;
+  background-color: #e9ecef82;
+  width: 25%;
+  border-right: 5px solid #e9ecef82;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-main {
+  min-height: calc(100vh - 163px);
+  max-height: fit-content;
+  background-color: #e9ecef82;
+  width: 75%;
+  border-left: 5px solid #e9ecef82;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 4px solid #e9ecef82;
+}
+
+.profile-img svg {
+  width: 150px;
+  height: 150px;
+  color: #3d8bfd;
+}
+
+.profile-img h2 {
+  letter-spacing: 1px;
+  margin-bottom: 0;
+}
+
+.profile-img p {
+  margin-top: 5px;
+  color: #858585;
+}
+
+.profile-settings {
+  border-top: 4px solid #e9ecef82;
+}
+
+.profile-settings ul {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.profile-settings ul li {
+  list-style: none;
+  padding: 12px 0;
+}
+
+.profile-settings ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #858585;
+  padding-left: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+.profile-settings ul li:hover {
+  background-color: #ced4da;
+  border-left: 5px solid #e35d6a;
+  transition: 0.3s;
+}
+
+.profile-settings a.active-user-link {
+  color: #e35d6a;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 992px) {
+  .profile-img svg {
+    width: 120px;
+    height: 120px;
+  }
+
+  .profile-img h2 {
+    font-size: 20px;
+  }
+
+  .profile-img p {
+    font-size: 14px;
+  }
+
+  .profile-settings ul li a {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .profile-content {
+    width: 90%;
+  }
+
+  .profile-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .profile-sidebar {
+    width: 80%;
+    margin-bottom: 8px;
+    border: none;
+    min-height: fit-content;
+  }
+
+  .profile-main {
+    width: 100%;
+    border: none;
+  }
+
+  .profile-settings ul li {
+    display: flex;
+    justify-content: center;
+  }
+
+  .profile-settings ul li a {
+    padding: 0;
+    font-size: 20px;
+  }
+}

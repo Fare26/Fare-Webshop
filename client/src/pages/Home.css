@@ -1,0 +1,106 @@
+.products-home-slider img {
+  min-height: 70vh;
+}
+
+.collection-h2 {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.new-colection {
+  width: 80vw;
+  margin: 100px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  justify-items: center;
+  justify-content: center;
+  grid-auto-rows: 300px;
+  column-gap: 20px;
+  row-gap: 30px;
+}
+
+.new-colection p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  margin: 0;
+  padding: 7px;
+  background-color: #000;
+  color: navajowhite;
+}
+
+.new-colection div {
+  max-width: 300px !important;
+}
+
+.new-colection div img {
+  height: 300px;
+  width: 300px;
+  border-radius: 5px;
+}
+
+.home-action {
+  background-color: #86c042 !important;
+  color: #fff !important;
+  font-size: 18px;
+}
+
+.home-brend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 150px;
+}
+
+.home-brend img {
+  width: 120px;
+  margin: 30px 50px;
+}
+
+@media screen and (max-width: 350px) {
+  .new-colection {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-auto-rows: 200px;
+    row-gap: 20px;
+  }
+
+  .new-colection div {
+    max-width: 200px !important;
+    max-height: 200px !important;
+  }
+
+  .new-colection div img {
+    height: 200px;
+    width: 200px;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .products-home-slider img {
+    min-height: 30vh;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .products-home-slider img {
+    min-height: 50vh;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .products-home-slider img {
+    min-height: 60vh;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .products-home-slider img {
+    min-height: 70vh;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+}

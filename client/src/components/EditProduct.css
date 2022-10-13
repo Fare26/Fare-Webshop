@@ -1,0 +1,147 @@
+.admin-product-panel {
+  min-height: calc(100vh - 123px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow-y: auto;
+  background: linear-gradient(to right, #e0c0a580, #88614280),
+    url(../images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 20px 0;
+}
+
+.admin-product-panel h1 {
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 1px;
+}
+
+.edit-add-product {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgb(255, 242, 222);
+  background: radial-gradient(
+    circle,
+    rgba(255, 242, 222, 0.85) 0%,
+    rgba(255, 222, 173, 0.85) 100%
+  );
+  padding: 20px;
+  border-radius: 10px;
+  width: 60%;
+}
+
+.edit-add-main-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.edit-add-main-form input,
+.edit-add-main-form textarea,
+.edit-add-second-form input {
+  margin-bottom: 20px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+}
+
+.edit-add-second-form hr {
+  border: 3px solid #000;
+  border-radius: 100%;
+  margin: 10px 0;
+}
+
+.edit-add-second-form label,
+.edit-add-main-form label {
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #495057;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.edit-add-second-form select {
+  margin-bottom: 20px;
+  border-radius: 5px;
+  padding: 5px 10px;
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #495057;
+  width: 100%;
+}
+
+.edit-add-second-form select:hover {
+  background-color: #fff;
+}
+
+.submit-edit-product {
+  width: 60%;
+  background-color: #000;
+  color: #fff;
+  font-size: 20px;
+  outline: none;
+  border: 2px solid navajowhite;
+  padding: 7px;
+  border-radius: 10px;
+}
+
+.submit-edit-product:hover {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 1200px) {
+  .submit-edit-product {
+    width: 70%;
+  }
+  .edit-add-product {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .submit-edit-product {
+    width: 80%;
+  }
+  .edit-add-product {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .edit-add-product {
+    flex-direction: column;
+  }
+
+  .submit-edit-product {
+    width: 75%;
+  }
+  .edit-add-product {
+    width: 75%;
+  }
+
+  .edit-add-main-form input,
+  .edit-add-main-form textarea,
+  .edit-add-second-form input {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .submit-edit-product {
+    width: 82%;
+  }
+  .edit-add-product {
+    width: 82%;
+  }
+  .edit-add-main-form input,
+  .edit-add-main-form textarea,
+  .edit-add-second-form input {
+    font-size: 16px;
+  }
+}

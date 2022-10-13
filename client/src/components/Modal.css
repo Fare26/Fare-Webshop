@@ -1,0 +1,92 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 20;
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+.modal {
+  display: block;
+  position: fixed;
+  top: 15vh;
+  left: 5%;
+  width: 90%;
+  height: 20%;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  z-index: 30;
+  animation: slide-down 300ms ease-out forwards;
+  font-family: "Roboto", sans-serif;
+  background: rgb(252, 176, 69);
+  background: linear-gradient(
+    135deg,
+    rgb(252, 176, 69) 0%,
+    rgba(227, 93, 106, 1) 50%,
+    rgba(220, 53, 69, 1) 100%
+  );
+}
+
+.exit {
+  display: block;
+  width: 100%;
+  text-align: end;
+}
+
+.exit svg {
+  font-size: 2.5rem;
+}
+
+.exit svg:hover {
+  cursor: pointer;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content p {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.content button {
+  font-size: 22px;
+  padding: 10px 40px;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  border-radius: 20px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.content button:hover {
+  transition: 0.3s;
+  opacity: 0.75;
+}
+
+@media (min-width: 768px) {
+  .modal {
+    width: 40rem;
+    left: calc(50% - 20rem);
+  }
+}
+
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-3rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

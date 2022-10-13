@@ -1,0 +1,171 @@
+nav {
+  margin: 0 auto;
+  background-color: #e35d6a;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+nav div {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav div ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+nav div ul li {
+  list-style: none;
+  padding: 5px 15px;
+}
+
+nav div ul li:hover {
+  background-color: #fff;
+  transition: linear 0.3s;
+  border-radius: 5px;
+}
+
+nav div ul li a {
+  text-decoration: none;
+  font-size: 22px;
+  color: #495057 !important;
+  letter-spacing: 0.5px;
+  position: relative;
+}
+
+.logout {
+  font-size: 20px;
+  color: #495057;
+  cursor: pointer;
+}
+
+nav div ul li a:after {
+  content: "";
+  position: absolute;
+  background-color: orangered;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+}
+
+nav div ul li a:hover:after {
+  width: 100%;
+}
+
+nav div .login-section {
+  margin-left: auto;
+}
+
+nav a.active-nav-link {
+  font-weight: bold;
+  color: #ffc107 !important;
+}
+
+.bump {
+  color: #ffc107;
+  animation: bump 300ms ease-out;
+}
+
+@keyframes bump {
+  0% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(0.9);
+  }
+  30% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(1.4);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.product-counter {
+  position: absolute;
+  top: 0;
+  right: -12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  background-color: #0aa2c0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.mobile-div {
+  display: none;
+  width: 100%;
+  padding: 0 20px;
+}
+.mobile-div ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+
+.mobile-div ul li {
+  padding: 7px 10px;
+}
+
+.burger-menu {
+  font-size: 24px;
+  color: #495057;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  nav div {
+    display: none;
+  }
+
+  .mobile-div {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  nav div ul li a {
+    font-size: 20px;
+  }
+  nav div {
+    width: 95%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  nav div {
+    width: 90%;
+  }
+  nav div ul li a {
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  nav div {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  nav div {
+    width: 70%;
+  }
+}

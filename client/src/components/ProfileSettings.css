@@ -1,0 +1,195 @@
+.profile-settings-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+  box-sizing: border-box;
+}
+
+.profile-settings-form h2 {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 28px;
+}
+
+.profile-settings-btn {
+  margin: 10px auto;
+  background-color: #000000;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-size: 26px;
+  width: fit-content;
+  font-weight: bold;
+  padding: 2px 20px;
+  border-radius: 20px;
+}
+
+.profile-settings-btn:hover {
+  opacity: 0.7;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.edit-pass {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.old-pass,
+.new-pass {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.edit-inputs {
+  width: 200px;
+}
+
+.editInput {
+  box-sizing: border-box;
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.editInput label {
+  font-size: 18px;
+  width: 25%;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+}
+
+.edit-pass label {
+  margin: 10px 0;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+}
+
+.editInput div {
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.editInput div input,
+.edit-pass div input {
+  width: 200px;
+  padding: 5px;
+  border-radius: 20px;
+  background-color: #cfe2ff;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  margin: 0 10px;
+}
+
+.editInput div input:disabled,
+.edit-pass div input:disabled {
+  background-color: white;
+  cursor: not-allowed;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  box-shadow: 0 0 0 30px #cfe2ff inset !important;
+}
+
+.edit-err-span {
+  font-size: 12px;
+  padding: 3px;
+  display: none;
+  text-align: center;
+  color: #dc3545;
+}
+
+input.edit-inputs:invalid[focused="true"] {
+  border: 2px solid #dc3545;
+}
+
+input.edit-inputs:invalid[focused="true"] ~ .edit-err-span {
+  display: block;
+  color: #dc3545;
+}
+
+.editInput button,
+.pass-btn {
+  width: fit-content;
+  padding: 5px 10px;
+  height: 35px;
+  font-size: 18px;
+  background-color: #198754;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: whitesmoke;
+}
+
+.pass-btn {
+  margin: 20px 0;
+}
+
+.editInput button:hover,
+.pass-btn:hover {
+  opacity: 0.7;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.editInput button svg {
+  color: whitesmoke;
+}
+
+@media screen and (max-width: 1200px) {
+  .profile-settings-form {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .profile-settings-form {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .profile-settings-form {
+    min-width: fit-content;
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .profile-settings-form {
+    padding: 10px;
+  }
+
+  .editInput {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .editInput button,
+  .pass-btn {
+    margin: 0 auto;
+  }
+  .editInput label {
+    width: 100%;
+    margin-bottom: 7px;
+  }
+
+  .editInput div {
+    width: 100%;
+    margin-bottom: 7px;
+  }
+
+  .new-pass {
+    margin-bottom: 7px;
+  }
+}

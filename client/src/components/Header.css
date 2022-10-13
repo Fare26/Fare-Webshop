@@ -1,0 +1,106 @@
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(234, 231, 222, 1) 100%
+  );
+}
+
+header .logo {
+  text-decoration: none;
+  font-size: 40px;
+  font-weight: bold;
+  color: orangered;
+  width: 39%;
+}
+
+header .logo span {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+header .social-networks {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 39%;
+}
+
+header .social-networks svg {
+  width: 25px;
+  height: 25px;
+  margin-left: 5px;
+}
+
+header .ig:hover {
+  color: orangered;
+  cursor: pointer;
+}
+
+header .fb:hover {
+  color: #0a58ca;
+  cursor: pointer;
+}
+
+header .wa:hover {
+  color: #198754;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 992px) {
+  header .logo {
+    width: 30%;
+  }
+
+  header .social-networks {
+    width: 30%;
+  }
+
+  header .social-networks svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  header .search-box {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  header {
+    flex-wrap: wrap;
+  }
+
+  header .logo {
+    width: 70%;
+  }
+
+  header .social-networks {
+    width: 30%;
+  }
+
+  header .social-networks svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  header .search-box {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  header .logo {
+    font-size: 35px;
+  }
+
+  header .logo span {
+    font-size: 25px;
+  }
+}

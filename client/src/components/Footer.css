@@ -1,0 +1,32 @@
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e35d6a;
+  padding: 15px 0;
+}
+
+footer p {
+  font-size: 18px;
+  color: whitesmoke;
+  margin: 0;
+}
+
+@media screen and (max-width: 500px) {
+  footer p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  footer p {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  footer p {
+    font-size: 9px;
+  }
+}

@@ -1,0 +1,170 @@
+.card {
+  height: 300px;
+  min-width: 200px;
+  position: relative;
+  transition: all 0.7s linear;
+  transform-style: preserve-3d;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  box-shadow: 6px 6px 12px 0px rgba(139, 139, 139, 0.56);
+}
+
+.front {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  position: absolute;
+  border: none;
+  outline: none;
+}
+
+.back {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  position: absolute;
+  border: none;
+  outline: none;
+}
+
+.front {
+  background-color: navajowhite;
+  z-index: 2;
+  backface-visibility: hidden;
+}
+
+.back {
+  background: rgb(252, 176, 69);
+  background: linear-gradient(
+    135deg,
+    rgb(252, 176, 69) 0%,
+    rgba(227, 93, 106, 1) 50%,
+    rgba(220, 53, 69, 1) 100%
+  );
+  z-index: 1;
+  transform: rotateY(180deg);
+}
+
+.container:hover .card {
+  transform: rotateY(180deg);
+}
+
+.container {
+  max-width: max-content;
+  max-height: max-content;
+  padding: 0;
+}
+
+.card-img {
+  width: 200px;
+  height: 200px;
+}
+
+.action-notification {
+  background-color: #86c042;
+  font-size: 18px;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 150;
+  margin: 0;
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.card-title {
+  font-family: "Aclonica", sans-serif;
+  margin: 10px 0 0 0;
+  text-align: center;
+  color: #495057;
+}
+
+.product-brend {
+  margin-top: auto;
+  font-size: 14px;
+  color: #495057;
+}
+
+.card-price {
+  font-family: "Aclonica", sans-serif;
+  color: #fff;
+}
+
+.cart-quantity {
+  margin: 0 0 20px 0;
+  color: whitesmoke;
+}
+
+.card-btn,
+.product-card-edit {
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  background-color: #479f76;
+  color: #fff;
+}
+
+.card-btn svg {
+  font-size: 20px;
+}
+
+.card-btn:hover {
+  background-color: #fff;
+  transition: 0.35s;
+  color: #e35d6a;
+}
+
+.card-btn:disabled {
+  opacity: 0.65;
+}
+
+.card-btn:disabled:hover {
+  background-color: #479f76;
+  color: #fff;
+}
+
+.products-profile-btn {
+  border: none;
+  outline: none;
+  background-color: #fcb045;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+.products-profile-btn:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.35s;
+}
+
+.product-card-delete {
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  background-color: #dc3545;
+  color: #fff;
+  margin-right: 17px;
+}
+
+.product-card-delete:hover,
+.product-card-edit:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
